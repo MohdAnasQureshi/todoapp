@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To Do App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="app">
+
+        <section class="greeting">
+            <h2 class="title">
+                How are you? <input type="text" id="name" placeholder="Your Name here!">
+            </h2>
+        </section>
+        <section class="create-todo">
+            <h3>Create a Task</h3>
+            <form id="new-todo">
+                <h4>What is your task?</h4>
+                <input type="text" name="content" id="content" placeholder="e.g. Do my homework." required>
+
+                <h4>Pick a Category</h4>
+                <div class="options" >
+                    <label>
+                        <input type="radio" name="category" id="category1" value="work">
+                        <span class="bubble work"></span>
+                        <div>Work</div>
+
+                    </label>
+                    <label>
+                        <input type="radio" name="category" id="category2" value="home" >
+                        <span class="bubble home"></span>
+                        <div>Home</div>
+
+                    </label>
+                </div>
+                <input type="submit" value="Add task">
+            </form>
+        </section>
+
+        <section class="todoList">
+            <h3>Your Tasks :</h3>
+            <div class="list" id="todoList">
+                <!-- <div class="todoItem">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble work"></span>
+                    </label>
+
+                    <div class="todoContent">
+                        <input type="text" value="Make a C program" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="todoItem done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble home"></span>
+                    </label>
+
+                    <div class="todoContent">
+                        <input type="text" value="Get vegetables" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
